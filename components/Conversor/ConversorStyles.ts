@@ -9,12 +9,18 @@ box-shadow:5px 5px 5px 5px rgba(0,0,0,0.19);
 border-radius:1rem;
 backdrop-filter:blur(5px);
 
+background-color:#ce299f;
+
 color:#fff;
 
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
+
+:hover {
+    background-color: #d646ab;
+}
 
 @media screen and (max-width:750px) {
     height:40vh;
