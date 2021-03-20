@@ -1,6 +1,16 @@
 import styled from 'styled-components'
 
 const ConversorStyles = styled.div`
+
+height:45vh;
+width:40%;
+
+box-shadow:5px 5px 5px 5px rgba(0,0,0,0.19);
+border-radius:1rem;
+backdrop-filter:blur(5px);
+
+color:#fff;
+
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -11,6 +21,8 @@ input {
     height:2rem;
     width:15rem;
 
+    color:#fff;
+
     font-family: 'Montserrat', sans-serif;
 
     border:none;
@@ -20,6 +32,7 @@ input {
 
     ::placeholder {
         text-align:center;
+        color:#fff;
     }
 
     :hover {
