@@ -16,6 +16,11 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 
+@media screen and (max-width:750px) {
+    height:40vh;
+    width:90%;
+}
+
 input {
     margin:0.2rem 0 1rem 0;
     height:2rem;
@@ -38,18 +43,34 @@ input {
     :hover {
         background-color:rgba(0,0,0,0.04);
     }
+
+    @media screen and (max-width:450px) {
+        width:80%;
+    }
 }
 
 div {
     text-align:center;
     font-size:1.2rem;
     font-family: 'Montserrat', sans-serif;
+
+    @media screen and (max-width:450px) {
+        font-size:1rem;
+    }
+
+    @media screen and (max-width:300px) {
+        font-size:0.8rem;
+    }
 }
 
 p {
     text-align:center;
     font-size:0.8rem;
     font-family: 'Montserrat', sans-serif;
+
+    @media screen and (max-width:450px) {
+        font-size:0.7rem;
+    }
 }
 
 h2 {
