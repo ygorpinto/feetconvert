@@ -11,24 +11,39 @@ input {
     height:2rem;
     width:15rem;
 
+    font-family: 'Montserrat', sans-serif;
+
     border:none;
     box-shadow:2px 2px rgba(0,0,0,0.15);
     border-radius:0.6rem;
-    background-color:rgba(0,0,0,0.07);
+    background-color:rgba(0,0,0,0.09);
 
     ::placeholder {
         text-align:center;
+    }
+
+    :hover {
+        background-color:rgba(0,0,0,0.04);
     }
 }
 
 div {
     text-align:center;
     font-size:1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
-p {}
+p {
+    text-align:center;
+    font-size:0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
 
-h2 {}
+h2 {
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
 
 `
 
