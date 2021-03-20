@@ -17,23 +17,23 @@ const [feetsize,setFeetSize] = useState("");
         	"8.5":39,
         }
 
-        if (value === "") {
-            return "Digite o tamanho US e será convertido em BR."
-        }
-
-        if (!(value in convertedSize)){
-            return "Digite um tamanho válido de 5.5 até 8.5."
-        }
-
         return convertedSize[value];
     }
 
     return (
         <ConversorStyles>
-            <input 
+            {(converter(feetsize) === undefined)&&
+            (<>
+            <div>Digite o tamanho do pé a ser convertido US.</div>
+            <p>Use medidas válidas do 5.5 ao 8.5</p>
+            </>)}
+            <input
+            placeholder="Tamanho US. ex:5.5. " 
             onChange={e=>setFeetSize(e.target.value)}
             type="number"/>
-            <div>{converter(feetsize)}</div>
+            {(converter(feetsize) !== undefined)?
+            <h2>{converter(feetsize)} BR</h2>:
+            null}
         </ConversorStyles>
     )
 }
