@@ -9,7 +9,7 @@ box-shadow:5px 5px 5px 5px rgba(0,0,0,0.19);
 border-radius:1rem;
 backdrop-filter:blur(5px);
 
-background-color:#ce299f;
+background-color:#871f67;
 
 color:#fff;
 
@@ -19,7 +19,7 @@ align-items:center;
 justify-content:center;
 
 :hover {
-    background-color: #d646ab;
+    background-color: #66154d;
 }
 
 @media screen and (max-width:750px) {
